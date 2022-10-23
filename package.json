@@ -1,0 +1,64 @@
+{
+  "name": "@velumjs/yorkie",
+  "version": "0.0.0",
+  "description": "githooks management forked from husky",
+  "engines": {
+    "node": ">=4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest",
+    "format": "prettier --single-quote --no-semi --write **/*.js",
+    "install": "node bin/install.js",
+    "uninstall": "node bin/uninstall.js",
+    "release": "bumpp && pnpm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ShenQingchuan/yorkie.git"
+  },
+  "keywords": [
+    "git",
+    "hook",
+    "hooks",
+    "pre-commit",
+    "precommit",
+    "post-commit",
+    "postcommit",
+    "pre-push",
+    "prepush",
+    "post-merge",
+    "postmerge",
+    "test"
+  ],
+  "authors": [
+    "Gmail <tmy991106@gmail.com>",
+    "ShenQingchuan"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShenQingchuan/yorkie/issues"
+  },
+  "homepage": "https://github.com/ShenQingchuan/yorkie",
+  "devDependencies": {
+    "bumpp": "^8.2.1",
+    "jest": "^20.0.4",
+    "mkdirp": "^0.5.1",
+    "prettier": "^1.4.4",
+    "rimraf": "^2.6.1",
+    "tempy": "^0.1.0"
+  },
+  "dependencies": {
+    "execa": "^0.8.0",
+    "is-ci": "^1.0.10",
+    "normalize-path": "^1.0.0",
+    "strip-indent": "^2.0.0"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  }
+}
